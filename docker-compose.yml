@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5431:5432
+    environment:
+      POSTGRES_USER: riff
+      POSTGRES_PASSWORD: riff-password
+      POSTGRES_DB: riff
